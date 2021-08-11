@@ -79,9 +79,9 @@ Designed Flask API based on the queries.
 ### Temperature Analysis I
 
 * Used hawaii_measurements.csv file for data,
-* Used SQLAlchemy or pandas's read_csv(),
+* Used pandas read_csv(),
 * Found the average temperature in June and December for all stations as well as the years in the dataset,
-* Run the t-test and p value to determine whether the difference in the means if there any statistically significant and got the analysis as Only 3.9 degrees Celsius, between 2010-2017 the mean temperatures in June and December December in all stations. T-test conducted, p-value is very low, the difference is signaficant.
+* Run the t-test and p value to determine whether the difference in the means if there any statistically significant and got the analysis as only 3.9 degrees Celsius, between 2010-2017 the mean temperatures in June and December in all stations. T-test conducted, p-value is very low, the difference is signaficant.
 
 ### Temperature Analysis II
 
