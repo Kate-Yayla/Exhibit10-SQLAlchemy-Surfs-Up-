@@ -91,8 +91,9 @@ Designed Flask API based on the queries.
   * Used the average temperature as the bar height,
   * Used the peak-to-peak (TMAX-TMIN) value as the y error bar (YERR),
 
-Here is the bar chart created based given data. 
-    ![temperature](Images/temperature.png)
+###### Here is the bar chart created based given data. 
+
+  ![temperature](Images/temperature.png)
 
 ### Daily Rainfall Average
 
