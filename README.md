@@ -34,11 +34,11 @@ I have used Python, SQLAlchemy and Matplotlib for the data exploration of climat
 
 ### Station Analysis
 
-* Designed a query to calculate the total number of stations.
+* Designed a query to calculate the total number of stations. There are 9 stations available to get a data. 
 * Designed a query to find the most active stations.
   * Listed the stations and temperature observation counts in descending order.
 * Designed a query to retrieve the last 12 months of temperature observation data (tobs).
-  * Filtered by the station with the highest number of observations.
+  * Filtered by the station with the highest number of observations (about 80)
   * Plotted the results as a histogram with `bins=12`.
 
     ![station-histogram](Images/station-histogram.png)
