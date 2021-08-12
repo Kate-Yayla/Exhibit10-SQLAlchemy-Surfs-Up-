@@ -11,11 +11,11 @@
 
 I have used Python, SQLAlchemy and Matplotlib for the data exploration of climate database for the following steps:
 
-* created engine to retriev the data from hawaii.sqlite file,
+* created engine to retrieve the data from hawaii.sqlite file,
 * choosed a start date and end date for my analysis,
 * found out the most active stations,
-* calculated the lowest, highest, and average temperature for the station'USC00519281',
-* plotted the temprature observation. 
+* calculated the lowest, highest, and average temperature for the station 'USC00519281',
+* plotted the temperature observation. 
 
 ### Precipitation Analysis
 
@@ -38,7 +38,7 @@ I have used Python, SQLAlchemy and Matplotlib for the data exploration of climat
 * Designed a query to find the most active stations.
   * Listed the stations and temperature observation counts in descending order.
 * Designed a query to retrieve the last 12 months of temperature observation data (tobs).
-  * Filtered by the station with the highest number of observations (about 80)
+  * Filtered by the station with the highest number of observations (about 80 Celcius)
   * Plotted the results as a histogram with `bins=12`.
 
     ![station-histogram](Images/station-histogram.png)
@@ -79,7 +79,7 @@ Designed Flask API based on the queries.
 ### Temperature Analysis I
 
 * Used hawaii_measurements.csv file for data,
-* Used pandas read_csv(),
+* Used pandas read_csv,
 * Found the average temperature in June and December for all stations as well as the years in the dataset,
 * Run the unpaired t-test using ind in code and p value determines whether the difference in the mean if there is statistical mean. There is only 3.9 degrees Celsius, and the mean temperatures in June and December in all stations between 2010-2017. Unpaired T-test conducted, p-value is very low than standard threshold, so null hypothesis is rejected. The difference could be considered as signaficant. 
 
