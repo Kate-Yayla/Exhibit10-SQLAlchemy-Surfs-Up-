@@ -3,7 +3,7 @@
 
 ### Overview
 
-* I have done climate analysis for a trip to Honolulu, Hawaii!
+* I have done the climate analysis for a trip to Honolulu, Hawaii!
 
 ![surfs-up.png](Images/surfs-up.png)
 
@@ -81,7 +81,7 @@ Designed Flask API based on the queries.
 * Used hawaii_measurements.csv file for data,
 * Used pandas read_csv(),
 * Found the average temperature in June and December for all stations as well as the years in the dataset,
-* Run the t-test and p value to determine whether the difference in the means if there any statistically significant and got the analysis as only 3.9 degrees Celsius, between 2010-2017 the mean temperatures in June and December in all stations. T-test conducted, p-value is very low, the difference is signaficant.
+* Run the unpaired t-test using ind in code and p value determines whether the difference in the mean if there is statistical mean. There is only 3.9 degrees Celsius, and the mean temperatures in June and December in all stations between 2010-2017. Unpaired T-test conducted, p-value is very low than standard threshold, so null hypothesis is rejected. The difference could be considered as signaficant. 
 
 ### Temperature Analysis II
 

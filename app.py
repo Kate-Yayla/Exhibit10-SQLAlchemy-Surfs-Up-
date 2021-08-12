@@ -77,7 +77,7 @@ def tobs():
     EndDate   = dt.datetime.strptime(session.query(Measurement.date).order_by(Measurement.date.desc()).first()[0], '%Y-%m-%d')
     QueryDate = dt.datetime.strftime((EndDate - dt.timedelta(365)), '%Y-%m-%d')
     results   = session.query(Measurement.date, Measurement.tobs).\
-    filter(Measurement.date    >= QueryDate).\
+    filter(Measurement.date >= QueryDate).\
     filter(Measurement.station == "USC00519281").\
     order_by(Measurement.date).all()
     session.close()
@@ -90,9 +90,10 @@ def tobs():
 @app.route("/api/v1.0/<start_date>")
 def tobs_2(start_date):
     session = Session(engine)
+        # Parse start date into datetime    
     # Query
     results = session.query(func.min(Measurement.tobs), func.avg(Measurement.tobs), func.max(Measurement.tobs)).\
-    filter(Measurement.date    >= start_date).\
+    filter(Measurement.date >= start_date).\
     filter(Measurement.station == "USC00519281").all()
     session.close()
     tobs_summary = {}
